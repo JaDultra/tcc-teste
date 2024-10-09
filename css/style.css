@@ -900,6 +900,8 @@ hr {
         margin-top: 80px; /* Espaço adicional entre a grade e os botões */
         justify-content: center;
         gap: 15px;
+        font-size: 0.8rem;;
+        
     }
 
     .grade-numeros label {
