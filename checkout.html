@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Institucional</title>
+   <link rel="icon" href="assets/iconNav.webp" type="image/webp">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/190633336d.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU_CODIGO_ANALYTICS"></script>
+    <script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXXJSCRBV7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MXXJSCRBV7');
+</script>
+    </script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="topo">
+                <div class="img-top">
+                    <img src="assets/jordan.svg" alt="">
+                    <img src="assets/snkrs.svg" alt="">
+                </div>
+
+                <ul>
+                    <li>Ajuda</li>
+                    <li>|</li>
+                    <li>Junte-se a nós</li>
+                    <li>|</li>
+                    <li>Entrar</li>
+                </ul>
+
+            </div>
+
+            <nav>
+                <img src="assets/logo.svg" alt="" class="logo-nike">
+                <ul>
+                    <li><a href="#">Lançamentos</a></li>
+                    <li><a href="#">Masculino</a></li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">SNKRS</a></li>
+                </ul>
+
+                <div class="icones-top">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                    <i class="fa-solid fa-bag-shopping fa-xl"></i>
+                </div>
+            </nav>
+            <div class="rolagem">
+                <i class="fa-solid fa-chevron-left"> &nbsp &nbsp &nbsp </i>
+                <marquee>
+                    Aqui você encontra todos os clássicos e lançamentos
+                </marquee> &nbsp &nbsp &nbsp
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </header>
+
+        <main>
+            <h2 class="titulo-checkout">Revisar e Finalizar Pedido </h2>
+
+            <div class="checkout">
+                <h2>Produto Adicionado ao Carrinho</h2>
+                <div class="produto-carrinho">
+                    <img src="" alt="Produto Adicionado" id="produto-carrinho-img">
+                    <div class="detalhes-produto">
+                        <p><strong>Produto:</strong> Tênis Air Jordan 1 Mid Masculino</p>
+                        <p id="produto-tamanho"><strong>Tamanho:</strong></p>
+                        <p><strong>Preço:</strong> R$ 1.199,00</p>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <h3>Total: R$ 1.199,00</h3>
+                </div>
+
+                <div class="botoes">
+                    <a href="index.html" class="btn-voltar">Voltar às Compras</a>
+                    <a href="javascript:void(0);" class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</a>
+                </div>
+            </div>
+        </main>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <p class="modal-top">Obrigado pela sua compra! <i class="fa-solid fa-face-laugh-wink" style="color: green;"></i></p class="modal-top">
+              <br>
+              <p>Seu pedido foi finalizado com sucesso.</p>
+              <br>
+              <a href="#" class="btn-fechar">Fechar</a>
+              
+            </div>
+        </div>          
+          
+
+        <footer>
+            <div class="end">
+                <ul>
+                    <li class="text-maior">Encontre Uma Loja Nike</li>
+                    <li class="text-menor">Cadastre-se para receber novidades</li>
+                    <li class="text-menor">Cartão Presente</li>
+                    <li class="text-menor">Mapa do Site</li>
+                </ul>
+                <ul>
+                    <li class="text-maior">Ajuda</li>
+                    <li class="text-menor">Dúvidas Gerais</li>
+                    <li class="text-menor">Encontre seu Tamanho</li>
+                    <li class="text-menor">Entregas</li>
+                    <li class="text-menor">Pedidos</li>
+                    <li class="text-menor">Trocas e Devoluções</li>
+                    <li class="text-menor">Pagamentos</li>
+                    <li class="text-menor">Produtos</li>
+                    <li class="text-menor">Corporativo</li>
+                    <li class="text-menor">Fale Conosco</li>
+                </ul>
+                <ul>
+                    <li class="text-maior">Sobre a Nike</li>
+                    <li class="text-menor">Feito pra Jogar</li>
+                    <li class="text-menor">Sustentabilidade</li>
+                    <li class="text-menor">Sobre a Nike, Inc.</li>
+                    <li class="text-menor">Sobre o Grupo SBF</li>
+                </ul>
+
+                <ul>
+                    <li class="text-maior">Redes Sociais</li>
+                    <div class="icones-end">
+                        <li><i class="fa-brands fa-facebook fa-xl"></i></li>
+                        <li><i class="fa-brands fa-instagram fa-xl"></i></li>
+                        <li><i class="fa-brands fa-youtube fa-xl"></i></li>
+                    </div>
+                </ul>
+
+
+            </div>
+
+            <hr>
+
+            
+            <div class="rodape">
+                <div>
+                    <p>Brasil</p>
+                    <p>Política de Privacidade</p>
+                    <p>Termos de Uso</p>
+                </div>
+                <div>
+                    <p>Nike Air Jordan - Educational Project by Jackson Dultra</p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
