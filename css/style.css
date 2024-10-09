@@ -900,7 +900,7 @@ hr {
         margin-top: 80px; /* Espaço adicional entre a grade e os botões */
         justify-content: center;
         gap: 15px;
-        font-size: 1rem;
+        font-size: 15px;
         
     }
 
