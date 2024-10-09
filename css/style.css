@@ -866,54 +866,76 @@ hr {
 
 /* Para telas pequenas - smartphones */
 @media (max-width: 828px) {
-    /* Remover a opção "SNKRS" do menu superior */
+    /* Remover os ícones de coração e sacola de compras */
+    .icones-top {
+        display: none;
+    }
+
+    /* Remover a opção "SNKRS" do menu */
     nav ul li:last-child {
         display: none;
     }
 
-    /* Ajuste do espaçamento entre a grade de tamanhos e os botões */
+    /* Centralizar e ajustar o topo e o menu de navegação */
+    .topo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .topo ul {
+        gap: 5px;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    /* Espaçamento entre a grade de tamanhos e os botões de compra */
     .grade-numeros {
         margin-bottom: 15px;
     }
 
     .botao {
         margin-top: 10px;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 10px;
     }
 
-    /* Menu inferior alinhado */
+    /* Menu inferior com colunas alinhadas */
     .end {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        width: 100%;
+        max-width: 1300px;
     }
 
     .end ul {
         padding: 0;
-        margin: 10px 0;
-        text-align: center;
+        margin: 0;
+        text-align: left;
     }
 
-    .end ul li {
-        font-size: 9px;
-        margin: 4px 0;
-    }
-
-    /* Rodapé alinhado e centralizado */
-    .rodape div {
-        justify-content: center;
-        text-align: center;
+    /* Footer alinhado */
+    .rodape {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
-    /* Ajuste final no espaçamento e margem do container */
-    .container {
-        padding: 0;
-        margin: 0 auto;
-        overflow-x: hidden; /* Remove qualquer rolagem lateral residual */
+    .rodape div {
+        justify-content: center;
     }
 }
 
