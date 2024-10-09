@@ -866,74 +866,70 @@ hr {
 
 /* Para telas pequenas - smartphones */
 @media (max-width: 828px) {
-    /* Reduzir zoom geral */
-    body {
-        transform: scale(0.95);
-        transform-origin: top left;
+    /* Remover ícones de coração e sacola no menu superior */
+    .icones-top {
+        display: none;
     }
 
-    /* Ajustar menu superior */
-    .topo {
-        flex-direction: row;
-        flex-wrap: wrap;
+    /* Centralizar o conteúdo no topo e no menu */
+    .container, nav, .topo {
+        align-items: center;
         justify-content: center;
+        text-align: center;
         padding: 0 5px;
-        font-size: 12px;
     }
 
-    .topo ul {
-        gap: 5px;
-        font-size: 11px;
-    }
-
-    /* Menu de navegação com menor largura e menor gap */
-    nav {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    /* Reduzir o tamanho da imagem grande sem cortá-la */
-    .img-maior {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    /* Ajuste adicional para imagens menores */
-    .img-menor {
-        width: 45px;
-        height: 45px;
-    }
-
-    /* Ajustes nos botões de adicionar ao carrinho e favoritos */
+    /* Ajuste nos botões para menor tamanho */
     .botao h2 {
-        font-size: 13px;
-        padding: 8px 4px;
+        font-size: 12px;
+        padding: 8px;
+        width: 140px;
     }
 
-    /* Ajuste no footer */
+    /* Centralizar e ajustar imagem grande e imagens menores */
+    .img-maior {
+        width: 85%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .img-menor {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    /* Footer menor e centralizado */
     footer {
-        font-size: 9px;
+        font-size: 8px;
         padding: 8px 0;
+        text-align: center;
     }
 
+    .end ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .rodape div {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Reduzir o menu do rodapé */
     .end ul li {
-        margin-top: 4px;
+        margin-top: 3px;
+        font-size: 10px;
     }
-
-    .rodape div p {
-        font-size: 9px;
+    
+    /* Ajuste final para reduzir e centralizar os itens */
+    .container-centro {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
     }
 }
-
-
 
 
 #custom-alert {
