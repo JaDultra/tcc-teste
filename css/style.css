@@ -866,8 +866,8 @@ hr {
 
 /* Para telas pequenas - smartphones */
 @media (max-width: 828px) {
-    /* Remover ícones de coração e sacola no menu superior */
-    .icones-top {
+    /* Remover ícones de coração, sacola e logo da Nike do menu superior */
+    .icones-top, .logo-nike {
         display: none;
     }
 
@@ -930,6 +930,7 @@ hr {
         justify-content: center;
     }
 }
+
 
 
 #custom-alert {
