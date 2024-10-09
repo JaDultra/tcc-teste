@@ -897,7 +897,7 @@ hr {
 
     /* Espaço entre a grade e os botões */
     .botao {
-        margin-top: 70px; /* Espaço adicional entre a grade e os botões */
+        margin-top: 80px; /* Espaço adicional entre a grade e os botões */
         justify-content: center;
         gap: 15px;
     }
@@ -914,9 +914,9 @@ hr {
     }
 
     .img-menor {
-        width: 35px;
-        height: 35px;
-        margin: 4px;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
     }
 
     /* Footer menor e centralizado */
