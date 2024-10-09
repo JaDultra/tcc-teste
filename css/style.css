@@ -866,65 +866,73 @@ hr {
 
 /* Para telas pequenas - smartphones */
 @media (max-width: 828px) {
-    /* Menu Superior: Centralizar logo e alinhar os ícones ao lado */
+    /* Reduzir zoom geral */
+    body {
+        transform: scale(0.95);
+        transform-origin: top left;
+    }
+
+    /* Ajustar menu superior */
     .topo {
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 5px;
+        font-size: 12px;
     }
 
     .topo ul {
-        flex-direction: row;
         gap: 5px;
+        font-size: 11px;
     }
 
-    /* Ajusta os ícones para ficarem lado a lado */
-    .icones-top {
+    /* Menu de navegação com menor largura e menor gap */
+    nav {
         flex-direction: row;
-        gap: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
-    /* Imagens menores dos tênis ajustadas para caberem na mesma linha */
-    .imagens-menores {
-        width: 60px;
-        height: 60px;
-        margin: 10px 5px;
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
+    /* Reduzir o tamanho da imagem grande sem cortá-la */
+    .img-maior {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Ajuste adicional para imagens menores */
     .img-menor {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
-    /* Diminuindo a grade de números para melhor ajuste */
-    .grade-numeros label {
-        width: 50px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    /* Redução dos botões de adicionar ao carrinho e favoritos */
+    /* Ajustes nos botões de adicionar ao carrinho e favoritos */
     .botao h2 {
-        width: 100%;
-        padding: 10px 5px;
-        font-size: 14px;
+        font-size: 13px;
+        padding: 8px 4px;
     }
 
-    /* Footer mais compacto */
+    /* Ajuste no footer */
     footer {
-        font-size: 10px;
-        padding: 10px 0;
+        font-size: 9px;
+        padding: 8px 0;
     }
 
     .end ul li {
-        margin-top: 5px;
+        margin-top: 4px;
     }
 
     .rodape div p {
-        font-size: 10px;
+        font-size: 9px;
     }
 }
+
 
 
 
