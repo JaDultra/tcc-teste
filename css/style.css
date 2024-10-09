@@ -900,9 +900,14 @@ hr {
         margin-top: 80px; /* Espaço adicional entre a grade e os botões */
         justify-content: center;
         gap: 15px;
-        font-size: 15px;
-        
     }
+
+    .botao h2 {
+        font-size: 14px; /* Aumenta o tamanho da fonte */
+        padding: 10px;   /* Aumenta o padding para deixar o botão maior */
+        width: 160px;    /* Ajuste a largura se necessário */
+    }
+
 
     .grade-numeros label {
         text-align: center;
