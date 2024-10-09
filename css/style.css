@@ -866,75 +866,67 @@ hr {
 
 /* Para telas pequenas - smartphones */
 @media (max-width: 828px) {
-    /* Remover os ícones de coração e sacola de compras */
+    /* Remover ícones de coração e sacola no menu superior */
     .icones-top {
         display: none;
     }
 
-    /* Remover a opção "SNKRS" do menu */
-    nav ul li:last-child {
-        display: none;
-    }
-
-    /* Centralizar e ajustar o topo e o menu de navegação */
-    .topo {
-        flex-direction: row;
-        flex-wrap: wrap;
+    /* Centralizar o conteúdo no topo e no menu */
+    .container, nav, .topo {
+        align-items: center;
         justify-content: center;
-        padding: 5px;
+        text-align: center;
+        padding: 0 5px;
     }
 
-    .topo ul {
-        gap: 5px;
+    /* Ajuste nos botões para menor tamanho */
+    .botao h2 {
+        font-size: 12px;
+        padding: 8px;
+        width: 140px;
     }
 
-    nav {
-        flex-direction: row;
-        justify-content: center;
-        padding: 5px;
+    /* Centralizar e ajustar imagem grande e imagens menores */
+    .img-maior {
+        width: 85%;
+        margin: 0 auto;
+        display: block;
     }
 
-    nav ul {
-        gap: 10px;
+    .img-menor {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
     }
 
-    /* Espaçamento entre a grade de tamanhos e os botões de compra */
-    .grade-numeros {
-        margin-bottom: 15px;
-    }
-
-    .botao {
-        margin-top: 10px;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    /* Menu inferior com colunas alinhadas */
-    .end {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: left;
-        width: 100%;
-        max-width: 1300px;
+    /* Footer menor e centralizado */
+    footer {
+        font-size: 8px;
+        padding: 8px 0;
+        text-align: center;
     }
 
     .end ul {
         padding: 0;
         margin: 0;
-        text-align: left;
-    }
-
-    /* Footer alinhado */
-    .rodape {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
     .rodape div {
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Reduzir o menu do rodapé */
+    .end ul li {
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    
+    /* Ajuste final para reduzir e centralizar os itens */
+    .container-centro {
+        padding: 0;
+        align-items: center;
         justify-content: center;
     }
 }
