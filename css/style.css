@@ -886,16 +886,23 @@ hr {
         width: 140px;
     }
 
-    /* Configura a grade de seleção de números para 4 itens por fileira */
+    /* Centralizar e ajustar a grade de números com espaço adicional */
     .grade-numeros {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* Quatro itens por fileira */
         gap: 8px; /* Espaço entre os itens */
-        margin-bottom: 15px; /* Espaço entre a grade e os botões */
+        margin: 0 auto 20px; /* Centraliza e adiciona espaço abaixo da grade */
+        width: fit-content; /* Ajusta a largura para o conteúdo */
+    }
+
+    /* Espaço entre a grade e os botões */
+    .botao {
+        margin-top: 15px; /* Espaço adicional entre a grade e os botões */
+        justify-content: center;
+        gap: 10px;
     }
 
     .grade-numeros label {
-        margin: 0; /* Remove margem individual dos itens */
         text-align: center;
     }
 
