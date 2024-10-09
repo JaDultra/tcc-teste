@@ -886,14 +886,17 @@ hr {
         width: 140px;
     }
 
-    /* Adiciona espaço entre a seleção de tamanhos e os botões */
+    /* Configura a grade de seleção de números para 4 itens por fileira */
     .grade-numeros {
-        margin-bottom: 15px; /* Espaço entre a grade de números e os botões */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Quatro itens por fileira */
+        gap: 8px; /* Espaço entre os itens */
+        margin-bottom: 15px; /* Espaço entre a grade e os botões */
     }
 
-    /* Ajusta o espaçamento entre os tamanhos na grade */
     .grade-numeros label {
-        margin: 0 5px 5px 0; /* Espaçamento entre os itens da grade */
+        margin: 0; /* Remove margem individual dos itens */
+        text-align: center;
     }
 
     /* Centralizar e ajustar imagem grande e imagens menores */
@@ -940,7 +943,6 @@ hr {
         justify-content: center;
     }
 }
-
 
 
 #custom-alert {
