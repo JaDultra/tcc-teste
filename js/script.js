@@ -234,9 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.btn-fechar').addEventListener('click', function() {
         // Tenta fechar a aba
         window.close(); // Tenta fechar a aba
-        
-        // Se não funcionar, você pode usar uma mensagem para o usuário (opcional)
-        alert("Se a aba não fechar, você pode fechá-la manualmente."); // Mensagem opcional
     });
     
 });
