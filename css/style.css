@@ -864,12 +864,13 @@ hr {
 
 /* -----------------------------------MEDIA QUERIES--------------------------------------------------- */
 
-/* Extra Pequenos (até 375px) */
-@media (max-width: 375px) {
+@media (max-width: 828px) {
+    /* Remover ícones de coração, sacola e logo da Nike do menu superior */
     .icones-top, .logo-nike {
         display: none;
     }
 
+    /* Centralizar o conteúdo no topo e no menu */
     .container, nav, .topo {
         align-items: center;
         justify-content: center;
@@ -877,352 +878,84 @@ hr {
         padding: 0 5px;
     }
 
+    /* Ajuste nos botões para menor tamanho */
     .botao h2 {
         font-size: 12px;
         padding: 8px;
-        width: 120px; /* Ajuste para telas muito pequenas */
-    }
-
-    .grade-numeros {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-        gap: 5px; /* Espaço entre os itens */
-        margin: 0 auto 20px;
-        width: fit-content;
-    }
-
-    .botao {
-        margin-top: 20px;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .img-maior {
-        width: 90%;
-    }
-
-    .img-menor {
-        width: 30px; /* Reduzir tamanho para pequenos dispositivos */
-        height: 30px;
-        margin: 5px;
-    }
-
-    footer {
-        font-size: 7px;
-    }
-
-    .end ul li {
-        font-size: 8px; /* Tamanho menor para o rodapé */
-    }
-}
-
-/* Pequenos (até 425px) */
-@media (max-width: 425px) {
-    /* Mesmos estilos do tamanho extra pequeno */
-    .icones-top, .logo-nike {
-        display: none;
-    }
-
-    .container, nav, .topo {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0 5px;
-    }
-
-    .botao h2 {
-        font-size: 13px;
-        padding: 10px;
         width: 140px;
     }
 
+    /* Centralizar e ajustar a grade de números com espaço adicional */
     .grade-numeros {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-        gap: 8px;
-        margin: 0 auto 20px;
-        width: fit-content;
+        grid-template-columns: repeat(4, 1fr); /* Quatro itens por fileira */
+        gap: 8px; /* Espaço entre os itens */
+        margin: 0 auto 20px; /* Centraliza e adiciona espaço abaixo da grade */
+        width: fit-content; /* Ajusta a largura para o conteúdo */
     }
 
+    /* Espaço entre a grade e os botões */
     .botao {
-        margin-top: 25px;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .img-maior {
-        width: 90%;
-    }
-
-    .img-menor {
-        width: 35px; /* Tamanho para pequenos smartphones */
-        height: 35px;
-    }
-
-    footer {
-        font-size: 8px;
-    }
-
-    .end ul li {
-        font-size: 9px;
-    }
-}
-
-/* Intermediários (até 480px) */
-@media (max-width: 480px) {
-    .icones-top, .logo-nike {
-        display: none;
-    }
-
-    .container, nav, .topo {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0 5px;
-    }
-
-    .botao h2 {
-        font-size: 14px;
-        padding: 10px;
-        width: 160px;
-    }
-
-    .grade-numeros {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Três colunas */
-        gap: 8px;
-        margin: 0 auto 20px;
-        width: fit-content;
-    }
-
-    .botao {
-        margin-top: 30px;
+        margin-top: 80px; /* Espaço adicional entre a grade e os botões */
         justify-content: center;
         gap: 15px;
     }
 
+    .botao h2 {
+        font-size: 17px; /* Aumenta o tamanho da fonte */
+        padding: 12px;   /* Aumenta o padding para deixar o botão maior */
+        width: 180px;    /* Ajuste a largura se necessário */
+    }
+
+
+    .grade-numeros label {
+        text-align: center;
+    }
+
+    /* Centralizar e ajustar imagem grande e imagens menores */
     .img-maior {
-        width: 90%;
+        width: 85%;
+        margin: 0 auto;
+        display: block;
     }
 
     .img-menor {
         width: 40px;
         height: 40px;
+        margin: 5px;
     }
 
+    /* Footer menor e centralizado */
     footer {
         font-size: 8px;
+        padding: 8px 0;
+        text-align: center;
     }
 
-    .end ul li {
-        font-size: 9px;
-    }
-}
-
-/* Tablets (até 768px) */
-@media (max-width: 768px) {
-    .icones-top, .logo-nike {
-        display: none;
+    .end ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
     }
 
-    .container, nav, .topo {
-        align-items: center;
+    .rodape div {
         justify-content: center;
         text-align: center;
-        padding: 0 5px;
     }
 
-    .botao h2 {
-        font-size: 15px;
-        padding: 10px;
-        width: 160px;
-    }
-
-    .grade-numeros {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Quatro colunas */
-        gap: 8px;
-        margin: 0 auto 20px;
-        width: fit-content;
-    }
-
-    .botao {
-        margin-top: 40px; /* Espaço maior */
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .img-maior {
-        width: 85%;
-    }
-
-    .img-menor {
-        width: 40px;
-        height: 40px;
-    }
-
-    footer {
-        font-size: 8px;
-    }
-
+    /* Reduzir o menu do rodapé */
     .end ul li {
+        margin-top: 3px;
         font-size: 10px;
     }
-}
-
-/* Desktops Pequenos (até 1280px) */
-@media (max-width: 1280px) {
-    .icones-top, .logo-nike {
-        display: none;
-    }
-
-    .container, nav, .topo {
+    
+    /* Ajuste final para reduzir e centralizar os itens */
+    .container-centro {
+        padding: 0;
         align-items: center;
         justify-content: center;
-        text-align: center;
-        padding: 0 5px;
-    }
-
-    .botao h2 {
-        font-size: 16px;
-        padding: 12px;
-        width: 180px; /* Ajuste a largura se necessário */
-    }
-
-    .grade-numeros {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Quatro colunas */
-        gap: 8px;
-        margin: 0 auto 20px;
-        width: fit-content;
-    }
-
-    .botao {
-        margin-top: 50px; /* Espaço adicional */
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .img-maior {
-        width: 85%;
-    }
-
-    .img-menor {
-        width: 45px;
-        height: 45px;
-    }
-
-    footer {
-        font-size: 9px;
-    }
-
-    .end ul li {
-        font-size: 10px;
     }
 }
-
-/* Desktops Médios (até 1440px) */
-@media (max-width: 1440px) {
-    .icones-top, .logo-nike {
-        display: none;
-    }
-
-    .container, nav, .topo {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0 5px;
-    }
-
-    .botao h2 {
-        font-size: 16px;
-        padding: 12px;
-        width: 180px;
-    }
-
-    .grade-numeros {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Quatro colunas */
-        gap: 8px;
-        margin: 0 auto 20px;
-        width: fit-content;
-    }
-
-    .botao {
-        margin-top: 60px; /* Espaço adicional */
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .img-maior {
-        width: 85%;
-    }
-
-    .img-menor {
-        width: 50px;
-        height: 50px;
-    }
-
-    footer {
-        font-size: 10px;
-    }
-
-    .end ul li {
-        font-size: 10px;
-    }
-}
-
-/* Desktops Grandes (acima de 1440px) */
-@media (min-width: 1441px) {
-    .icones-top, .logo-nike {
-        display: none;
-    }
-
-    .container, nav, .topo {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0 5px;
-    }
-
-    .botao h2 {
-        font-size: 16px;
-        padding: 12px;
-        width: 200px; /* Ajuste a largura se necessário */
-    }
-
-    .grade-numeros {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Quatro colunas */
-        gap: 10px; /* Espaço maior entre os itens */
-        margin: 0 auto 20px;
-        width: fit-content;
-    }
-
-    .botao {
-        margin-top: 60px; /* Espaço adicional */
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .img-maior {
-        width: 80%;
-    }
-
-    .img-menor {
-        width: 50px;
-        height: 50px;
-    }
-
-    footer {
-        font-size: 10px;
-    }
-
-    .end ul li {
-        font-size: 10px;
-    }
-}
-
 
 
 #custom-alert {
